@@ -1,0 +1,6 @@
+github.com/caarlos0/env/v6 v6.9.1 h1:zOkkjM0F6ltnQ5eBX6IPI41UP/KDGEK7rRPwGCNos8k=
+github.com/caarlos0/env/v6 v6.9.1/go.mod h1:hvp/ryKXKipEkcuYjs9mI4bBCg+UI0Yhgm5Zu0ddvwc=
+github.com/namedotcom/go/v4 v4.0.0 h1:Q9iedPbrbSP5idFmXFU8DUcYxo/EjAZ7A/syNMVF9iA=
+github.com/namedotcom/go/v4 v4.0.0/go.mod h1:mn41hlJi6T924rrSiDUMiLDwzZWIHIBMDG5RxetHytI=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
