@@ -26,8 +26,13 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	client := namecom.New(cfg.User, cfg.Token)
+	domain := cfg.Domain
+	if cfg.Host != "" && cfg.Host != "@" {
+		domain = fmt.Sprintf("%s.%s", cfg.Host, cfg.Domain)
+	}
+	log.Printf("Start ddns service for %s", domain)
 
+	client := namecom.New(cfg.User, cfg.Token)
 	for {
 		if err := process(cfg, client); err != nil {
 			log.Println(err)
@@ -37,6 +42,7 @@ func main() {
 }
 
 func process(cfg Config, client *namecom.NameCom) error {
+	log.Println("Checking IP address")
 	ip, err := getPublicIP()
 	if err != nil {
 		return fmt.Errorf("failed to get public IP: %w", err)
